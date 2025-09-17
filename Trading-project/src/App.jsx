@@ -1,4 +1,4 @@
-import { useState } from 'react'
+import { useState, useEffect } from 'react'
 import './App.css'
 import Sidebar from './components/Sidebar'
 import Navbar from './components/Navbar'
@@ -10,8 +10,20 @@ import Market from './pages/Market.jsx'
 import Portfolio from './pages/Portfolio.jsx'
 import Trade from './pages/Trade.jsx'
 import Reports from './pages/Reports.jsx'
+import Loading from './components/Loading.jsx'
 
 function App() {
+  const [isLoading, setIsLoading] = useState(true)
+
+  useEffect(() => {
+    // Simulate a data load or delay (3 sec)
+    const timer = setTimeout(() => setIsLoading(false), 3000)
+    return () => clearTimeout(timer)
+  }, [])
+
+  if (isLoading) {
+    return <Loading />
+  }
 
   return (
     <>
