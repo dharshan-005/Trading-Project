@@ -3,18 +3,35 @@ import React from 'react'
 const Loading = () => {
   return (
     <>
-    <div className="flex flex-col items-center justify-center h-screen bg-gray-100">
-      <div className="loader ease-linear rounded-full border-8 border-t-8 border-gray-200 h-16 w-16 mb-4"></div>
-      <p className="text-gray-700 text-lg font-semibold">Set no limit</p>
+    <div className="flex flex-col items-center justify-center h-screen bg-black">
+      <div className="loader ease-linear rounded-full  h-16 w-16 mb-4"></div>
+      <p className="text-gray-700 text-lg font-semibold p-text">Set no limit</p>
 
       <style jsx>{`
         .loader {
-          border-top-color: #3498db;
+          position: absolute;
+          width: 200px;
+          height: 200px;
+          border-radius: 50%;
           animation: spin 1s linear infinite;
         }
+        
+        .p-text {
+          color: #000;
+          font-size: 20px;
+          animation: text 3s ease-in-out infinite;
+        }
+
+        @keyframes text {
+          50%{
+          color: #fff;
+          }
+        }
+
         @keyframes spin {
-          0% { transform: rotate(0deg);}
-          100% { transform: rotate(360deg);}
+          0% { transform: rotate(0deg);box-shadow: 1px  5px 2px #e65c00}
+          50% { transform: rotate(180deg);box-shadow: 1px  5px 2px #18b201}
+          100% { transform: rotate(360deg);box-shadow: 1px  5px 2px #3498db}
         }
       `}</style>
     </div>

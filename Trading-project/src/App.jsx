@@ -16,7 +16,6 @@ function App() {
   const [isLoading, setIsLoading] = useState(true)
 
   useEffect(() => {
-    // Simulate a data load or delay (3 sec)
     const timer = setTimeout(() => setIsLoading(false), 3000)
     return () => clearTimeout(timer)
   }, [])
