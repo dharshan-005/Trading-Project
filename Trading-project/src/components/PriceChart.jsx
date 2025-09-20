@@ -10,7 +10,7 @@ const data = {
       {
         label: 'Price',
         data: [100, 200, 150, 300, 250, 400, 350],
-        borderColor: 'rgba(220, 38, 38)',
+        borderColor: 'rgba(59, 130, 246)',
         backgroundColor: 'rgba(0, 0, 0)',
         fill: true,
         tension: 0.3

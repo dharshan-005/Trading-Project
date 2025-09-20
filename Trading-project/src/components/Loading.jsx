@@ -29,9 +29,9 @@ const Loading = () => {
         }
 
         @keyframes spin {
-          0% { transform: rotate(0deg);box-shadow: 1px  5px 2px #e65c00}
-          50% { transform: rotate(180deg);box-shadow: 1px  5px 2px #18b201}
-          100% { transform: rotate(360deg);box-shadow: 1px  5px 2px #3498db}
+          0% { transform: rotate(0deg);box-shadow: 1px  5px 2px #0033cc}
+          50% { transform: rotate(180deg);box-shadow: 1px  5px 2px #90CDF4}
+          100% { transform: rotate(360deg);box-shadow: 1px  5px 2px #99b3ff}
         }
       `}</style>
     </div>

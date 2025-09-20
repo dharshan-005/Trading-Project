@@ -27,7 +27,7 @@ function App() {
   return (
     <>
       <Router>
-        <div className='flex min-h-screen bg-gray-500'>
+        <div className='flex min-h-screen bg-black'>
           <Sidebar />
           <div className='flex-1 flex flex-col'>
             <Navbar />

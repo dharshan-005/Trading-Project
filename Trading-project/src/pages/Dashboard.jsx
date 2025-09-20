@@ -4,7 +4,7 @@ import PriceChart from '../components/PriceChart.jsx'
 const Dashboard = () => {
   return (
     <>
-    <div>
+    <div className='text-white'>
       <h1 className="text-2xl font-semibold mb-4">Dashboard</h1>
       {/* <p>Welcome to your trading dashboard.</p> */}
       <div className='grid grid-cols-1 md:grid-cols-3 gap-6 mb-8'>
@@ -19,8 +19,8 @@ const Dashboard = () => {
           <li>SENSEX: 61,500 (+0.36%)</li>
         </ul>
       </div>
-    </div>
     <PriceChart />
+    </div>
     </>
   )
 }
