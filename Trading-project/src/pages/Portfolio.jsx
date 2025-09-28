@@ -1,4 +1,5 @@
 import React from 'react'
+import PriceChart from '../components/PriceChart.jsx'
 
 const holdings = [
   { symbol: "Reliance", qty: 10, avg: 2500, current: 2600 },
@@ -33,6 +34,9 @@ const Portfolio = () => {
           ))}
         </tbody>
       </table>
+      <br />
+      <PriceChart />
+      <br />
     </div>
     </>
   )

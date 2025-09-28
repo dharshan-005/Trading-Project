@@ -28,9 +28,15 @@ const options = {
 const PriceChart = () => {
   return (
     <>
-    <div>
-      <h2>Price Chart</h2>
-      <Line data={data} options={options} />
+    <div className='flex justify-center items-center'>
+      <div className='w-full max-w-3xl h-96'>
+        <h2 className='text-[25px]'>Price Chart</h2>
+        <br />
+        <Line 
+          data={data} 
+          options={{ ...options, responsive: true, maintainAspectRatio: false }} 
+        />
+      </div>
     </div>
     </>
   )

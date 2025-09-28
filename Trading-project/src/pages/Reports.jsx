@@ -3,7 +3,7 @@ import React from 'react'
 const Reports = () => {
   return (
     <>
-    <div>
+    <div className='text-white'>
       <h1 className="text-2xl font-semibold mb-4">Reports</h1>
       <p>View and analyze your trading reports here.</p>
     </div>

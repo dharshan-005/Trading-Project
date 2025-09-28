@@ -1,5 +1,4 @@
 import React from 'react'
-import PriceChart from '../components/PriceChart.jsx'
 
 const Dashboard = () => {
   return (
@@ -13,13 +12,12 @@ const Dashboard = () => {
         <div>Recent Trades: 3</div>
       </div>
       <div>
-        <h2>Market Snapshot</h2>
+        <h2 className='pb-3'>Market Snapshot</h2>
         <ul>
           <li>NIFTY 50: 18,250 (+0.42%)</li>
           <li>SENSEX: 61,500 (+0.36%)</li>
         </ul>
       </div>
-    <PriceChart />
     </div>
     </>
   )
