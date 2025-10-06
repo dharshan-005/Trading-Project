@@ -12,7 +12,7 @@ const Dashboard = () => {
         <div>Recent Trades: 3</div>
       </div>
       <div>
-        <h2 className='pb-3'>Market Snapshot</h2>
+        <h1 className='pb-3 text-[20px]'>Market Snapshot</h1>
         <ul>
           <li>NIFTY 50: 18,250 (+0.42%)</li>
           <li>SENSEX: 61,500 (+0.36%)</li>

@@ -21,6 +21,10 @@ const Navbar = () => {
               <NavLink to="/portfolio" className={ ({ isActive }) => isActive ? "text-blue-500" : "text-white"}>Portfolio</NavLink>
               <NavLink to="/trade" className={ ({ isActive }) => isActive ? "text-blue-500" : "text-white"}>Trade</NavLink>
               <NavLink to="/reports" className={ ({ isActive }) => isActive ? "text-blue-500" : "text-white"}>Reports</NavLink>
+              {/* <NavLink to="/montecarlo" className={({ isActive }) => isActive ? 'text-blue-500 font-semibold' : 'text-white'}>Monte Carlo</NavLink>
+              <NavLink to="/sentiment" className={({ isActive }) => isActive ? 'text-blue-500 font-semibold' : 'text-white'}>Sentiment</NavLink> */}
+              <NavLink to="/orderbook" className={({ isActive }) => isActive ? 'text-blue-500 font-semibold' : 'text-white'}>Orderbook</NavLink>
+              {/* <NavLink to="/backtestpanel" className={({ isActive }) => isActive ? 'text-blue-500 font-semibold' : 'text-white'}>Backtest Panel</NavLink> */}
             </div>  
             <div className="ml-auto space-x-2">
               <Link to="/login" className='text-blue-500 hover:underline cursor-pointer'>Login</Link>

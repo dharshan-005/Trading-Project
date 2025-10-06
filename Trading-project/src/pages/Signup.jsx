@@ -7,9 +7,9 @@ const Signup = () => {
     <div className='flex flex-col items-center'>
       <h2 className="text-xl font-semibold mb-4 text-white">Sign Up</h2>
       <form className="space-y-4">
-        <input type="text" placeholder="Name" className="w-full border p-2 rounded" required />
-        <input type="email" placeholder="Email" className="w-full border p-2 rounded" required />
-        <input type="password" placeholder="Password" className="w-full border p-2 rounded" required />
+        <input type="text" placeholder="Name" className="w-full border p-2 rounded bg-black" required />
+        <input type="email" placeholder="Email" className="w-full border p-2 rounded bg-black" required />
+        <input type="password" placeholder="Password" className="w-full border p-2 rounded bg-black" required />
         <div>
           <Link to="/login" className='text-white '>Already have an account? <span className='hover:underline cursor-pointer'>Login</span></Link>
         </div>

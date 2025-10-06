@@ -11,6 +11,10 @@ import Portfolio from './pages/Portfolio.jsx'
 import Trade from './pages/Trade.jsx'
 import Reports from './pages/Reports.jsx'
 import Loading from './components/Loading.jsx'
+import SentimentPanel from './pages/SentimentPanel.jsx'
+import MonteCarloPanel from './pages/MonteCarloPanel.jsx'
+import BacktestPanel from './pages/BacktestPanel.jsx'
+import OrderBook from './pages/OrderBook.jsx'
 
 function App() {
   const [isLoading, setIsLoading] = useState(true)
@@ -41,6 +45,10 @@ function App() {
                 <Route path='/portfolio' element={<Portfolio />} />
                 <Route path='/trade' element={<Trade />} />
                 <Route path='/reports' element={<Reports />} />
+                {/* <Route path="/montecarlo" element={<MonteCarloPanel />} /> */}
+                {/* <Route path="/sentiment" element={<SentimentPanel />} /> */}
+                <Route path="/orderbook" element={<OrderBook />} />
+                {/* <Route path="/backtestpanel" element={<BacktestPanel />} /> */}
               </Routes>
             </main>
           </div>
@@ -50,4 +58,4 @@ function App() {
   )
 }
 
-export default App
+export default App;

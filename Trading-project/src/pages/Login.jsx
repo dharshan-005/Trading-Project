@@ -6,8 +6,8 @@ const Login = () => {
     <div className='flex flex-col items-center'>
       <h2 className="text-xl font-semibold mb-4 text-white">Login</h2>
       <form className="space-y-4">
-        <input type="email" placeholder="Email" className="w-full border p-2 rounded" required/>
-        <input type="password" placeholder="Password" className="w-full border p-2 rounded" required/>
+        <input type="email" placeholder="Email" className="w-full border p-2 rounded bg-black" required/>
+        <input type="password" placeholder="Password" className="w-full border p-2 rounded bg-black" required/>
         <div>
           <a className='text-white hover:underline cursor-pointer'>Forgot Password?</a>
         </div>
